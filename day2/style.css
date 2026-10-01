@@ -1,0 +1,103 @@
+/* Box-sizing reset */
+* {
+  box-sizing: border-box;
+}
+
+/* Header */
+header {
+  background-color: #222;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Navigation using Flexbox */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+}
+
+/* Visible hover style */
+nav a:hover {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+/* Main content */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Features using CSS Grid */
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Shortcuts table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #333;
+  padding: 10px;
+}
+
+/* Feedback form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: 10px;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  main {
+    padding: 10px;
+  }
+}
