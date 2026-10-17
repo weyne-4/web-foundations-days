@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Character Counter</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1 id="title">Live Character Counter</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Add A Note</h2>
+        <form id="noteform">
+          <label for="note-text">Write your text here </label>
+          <textarea id="note-text" name="note-text"> </textarea>
+        </form>
+      </section>
+      <section>
+        <p id="char-count"></p>
+        <p id="word-count"></p>
+        <button id="clear-btn" type="button">Clear</button>
+        <button id="theme-toggle" type="button">Theme</button>
+      </section>
+    </main>
+  </body>
+</html>

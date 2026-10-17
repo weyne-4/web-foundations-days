@@ -1,0 +1,24 @@
+:root{
+    --back-g-color :white;
+    --text-color :black;
+    --Ch-counter-color :black;
+
+}
+
+body.dark{
+    --back-g-color :black;
+    --text-color: white;
+    --Ch-counter-color: white;
+}
+
+body{
+    background-color: var(--back-g-color);
+    color: var(--text-color);
+}
+.warning{
+    color: orange;
+}
+.over{
+    color: red;
+    font-weight: bold;
+}
