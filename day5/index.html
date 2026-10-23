@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user directory</title>
+</head>
+<body>
+    <header>
+
+        <h1>user directory</h1>
+        <P>loads and filters users from rest API</P>
+    </header>
+    <section aria-labelledby="users-heading">
+        <h2 id="users-heading">Users</h2>
+        <p id="status" role="status" aria-live="polite">press load users to begin </p>
+        <button id="load-users">load users</button>
+          <br>
+        <label for="filter-input">filter input</label>
+        <br>
+        <input id="filter-input" type="text" placeholder="Enter a name">
+        <p id="status"></p>
+
+        <ul id="users-list"></ul>
+
+    </section>
+</body>
+</html>
